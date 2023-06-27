@@ -2,8 +2,8 @@ import React from 'react';
 
 const Projects = () => {
     return (
-        <div className='grid grid-cols-2 gap-5'>
-            <div className='border-2 rounded shadow-white shadow-sm'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
+            <div data-aos="zoom-in-down" className='border-2 rounded shadow-white shadow-sm'>
                 <img className='h-[380px]' src="https://i.ibb.co/QKZsFys/la-masia.png" alt="" />
                 <div className='p-5'>
                     <p className='text-3xl pb-3 font-semibold'>La Masia Sports Academy</p>
@@ -14,7 +14,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div className='border-2 rounded shadow-white shadow-sm'>
+            <div data-aos="zoom-in-down" className='border-2 rounded shadow-white shadow-sm'>
                 <img className='h-[380px]' src="https://i.ibb.co/gVC38QP/toys.png" alt="" />
                 <div className='p-5'>
                     <p className='text-3xl pb-3 font-semibold'>Super Hero Toys</p>
@@ -25,7 +25,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            <div className='border-2 rounded shadow-white shadow-sm'>
+            <div data-aos="zoom-in-down" className='border-2 rounded shadow-white shadow-sm'>
                 <img className='h-[380px]' src="https://i.ibb.co/ZmWCDmR/chefs.png" alt="" />
                 <div className='p-5'>
                     <p className='text-2xl pb-3 font-semibold'>French Chef's</p>

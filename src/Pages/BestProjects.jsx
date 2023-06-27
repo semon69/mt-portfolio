@@ -6,7 +6,7 @@ const BestProjects = () => {
         <div className='my-10'>
             <p className='text-4xl font-bold italic text-center my-8 border-b-orange-600 border-b-4 w-1/4 mx-auto pb-3'>My Best Projects</p>
 
-            <div className='grid grid-cols-2 gap-5'>
+            <div data-aos="zoom-in-down" className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                 <div className='border-2 rounded shadow-white shadow-sm'>
                     <img className='h-[380px]' src="https://i.ibb.co/QKZsFys/la-masia.png" alt="" />
                     <div className='p-5'>

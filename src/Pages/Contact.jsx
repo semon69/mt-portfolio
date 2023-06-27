@@ -8,7 +8,7 @@ const Contact = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 w-1/4 mx-auto pb-3  border-b-orange-600">Contact Me</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
+                        <div  data-aos="zoom-in-right">
                             <div className='mt-12 mb-10'>
                                 <h3 className="text-3xl font-semibold mb-2">Find Me On</h3>
                                 <p className="text-white">Feel free to contact</p>
@@ -20,7 +20,7 @@ const Contact = () => {
                                 <p><a href="https://github.com/semon69"><FaGithub></FaGithub></a></p>
                             </div>
                         </div>
-                        <div data-aos="fade-up">
+                        <div data-aos="zoom-in-right">
                             <h3 className="text-xl font-semibold mb-2">Send me a Message</h3>
                             <form className="max-w-md">
                                 <div className="mb-4">
