@@ -11,7 +11,7 @@ const Skills = () => {
         <div className='my-20'>
             <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3  border-b-orange-600 my-10">My Skills</h2>
             <div className='grid grid-cols-1 lg:grid-cols-3 justify-between gap-5'>
-                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 hover:animate-bounce'>
+                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 bg-white bg-opacity-80 hover:animate-bounce'>
                     <p className='text-blue-600 inline-flex items-center text-4xl'><AiFillHtml5 /> </p>
                     <p>HTML</p>
                     <CircularProgressbar
@@ -20,11 +20,12 @@ const Skills = () => {
                         text={`${90}%`}
                         styles={buildStyles({
                             textColor: '#FF6600',
+                            trailColor: '#36454F',
                             pathColor: '#FF6600'
                         })}
                     />
                 </div>
-                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 hover:animate-bounce'>
+                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 bg-white bg-opacity-80 hover:animate-bounce'>
                     <p className='inline-flex items-center text-4xl text-blue-600'><DiCss3 /> </p>
                     <p>CSS</p>
                     <CircularProgressbar
@@ -33,11 +34,12 @@ const Skills = () => {
                         text={`${80}%`}
                         styles={buildStyles({
                             textColor: '#FF6600',
+                            trailColor: '#36454F',
                             pathColor: '#FF6600'
                         })} />
                 </div>
-                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 hover:animate-bounce'>
-                    <p className='inline-flex items-center text-4xl text-white'><SiJavascript /> </p>
+                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 bg-white bg-opacity-80 hover:animate-bounce'>
+                    <p className='inline-flex items-center text-4xl'><SiJavascript /> </p>
                     <p>JavaScript</p>
                     <CircularProgressbar
                         className='w-44 h-40'
@@ -45,10 +47,11 @@ const Skills = () => {
                         text={`${70}%`}
                         styles={buildStyles({
                             textColor: '#FF6600',
+                            trailColor: '#36454F',
                             pathColor: '#FF6600'
                         })} />
                 </div>
-                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 hover:animate-bounce'>
+                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 bg-white bg-opacity-80 hover:animate-bounce'>
                     <p className='inline-flex items-center text-4xl text-blue-400'><SiTailwindcss /> </p>
                     <p>TailwindCSS</p>
                     <CircularProgressbar
@@ -57,10 +60,11 @@ const Skills = () => {
                         text={`${80}%`}
                         styles={buildStyles({
                             textColor: '#FF6600',
+                            trailColor: '#36454F',
                             pathColor: '#FF6600'
                         })} />
                 </div>
-                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 hover:animate-bounce'>
+                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 bg-white bg-opacity-80 hover:animate-bounce'>
                     <p className='inline-flex items-center text-4xl text-purple-600'><FaBootstrap /> </p>
                     <p>Bootstrap</p>
                     <CircularProgressbar
@@ -69,10 +73,11 @@ const Skills = () => {
                         text={`${85}%`}
                         styles={buildStyles({
                             textColor: '#FF6600',
+                            trailColor: '#36454F',
                             pathColor: '#FF6600'
                         })} />
                 </div>
-                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 hover:animate-bounce'>
+                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 bg-white bg-opacity-80 hover:animate-bounce'>
                     <p className='inline-flex items-center text-4xl text-blue-400'><FaReact /> </p>
                     <p>ReactJS</p>
                     <CircularProgressbar
@@ -81,10 +86,11 @@ const Skills = () => {
                         text={`${70}%`}
                         styles={buildStyles({
                             textColor: '#FF6600',
+                            trailColor: '#36454F',
                             pathColor: '#FF6600'
                         })} />
                 </div>
-                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 hover:animate-bounce'>
+                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 bg-white bg-opacity-80 hover:animate-bounce'>
                     <p className='inline-flex items-center text-4xl text-green-700'><SiMongodb /> </p>
                     <p>MongoDB</p>
                     <CircularProgressbar
@@ -93,11 +99,12 @@ const Skills = () => {
                         text={`${60}%`}
                         styles={buildStyles({
                             textColor: '#FF6600',
+                            trailColor: '#36454F',
                             pathColor: '#FF6600'
                         })} />
                 </div>
-                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 hover:animate-bounce'>
-                    <p className='inline-flex items-center text-4xl text-white'><SiExpress /> </p>
+                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 bg-white bg-opacity-80 hover:animate-bounce'>
+                    <p className='inline-flex items-center text-4xl text-black'><SiExpress /> </p>
                     <p>ExpressJS</p>
                     <CircularProgressbar
                         className='w-44 h-40'
@@ -105,10 +112,11 @@ const Skills = () => {
                         text={`${50}%`}
                         styles={buildStyles({
                             textColor: '#FF6600',
+                            trailColor: '#36454F',
                             pathColor: '#FF6600'
                         })} />
                 </div>
-                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 hover:animate-bounce'>
+                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 bg-white bg-opacity-80 hover:animate-bounce'>
                     <p className='inline-flex items-center text-4xl text-green-700'><FaNodeJs /> </p>
                     <p>NodeJS</p>
                     <CircularProgressbar
@@ -117,6 +125,7 @@ const Skills = () => {
                         text={`${40}%`}
                         styles={buildStyles({
                             textColor: '#FF6600',
+                            trailColor: '#36454F',
                             pathColor: '#FF6600'
                         })} />
                 </div>

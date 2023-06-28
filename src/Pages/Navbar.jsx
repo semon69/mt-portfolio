@@ -31,7 +31,7 @@ const Navbar = () => {
                             </a>
                         </div>
                         <div className="hidden md:block">
-                            <div className="ml-10 flex items-baseline space-x-16">
+                            <div className="ml-10 flex items-baseline font-bold text-xl space-x-16">
                                 {routes}
                             </div>
                         </div>
@@ -70,7 +70,7 @@ const Navbar = () => {
 
                         {menuOpen && (
                             <div className="md:hidden">
-                                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black">
+                                <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black block">
                                     {routes}
                                 </div>
                             </div>
