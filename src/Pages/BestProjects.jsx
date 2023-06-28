@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const BestProjects = () => {
     return (
         <div className='my-10'>
-            <p className='text-4xl font-bold italic text-center my-8 border-b-orange-600 border-b-4 w-1/4 mx-auto pb-3'>My Best Projects</p>
+            <p className='text-4xl font-bold italic text-center my-8 border-b-orange-600 border-b-4 lg:w-1/4 lg:mx-auto pb-3'>My Best Projects</p>
 
             <div data-aos="zoom-in-down" className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                 <div className='border-2 rounded shadow-white shadow-sm'>

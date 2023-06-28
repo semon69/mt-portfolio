@@ -17,11 +17,9 @@ const Banner = () => {
     return (
         <div className=''>
             <div className='grid grid-cols-1 lg:grid-cols-2 justify-between items-center'>
-                <div data-aos="fade-right" className='p-3 space-y-9'>
-                    <p className='text-9xl italic'>Hello! I'm</p>
-                    <p className='text-7xl italic'>MD EMON SHEIKH</p>
-
-                    {/* <p className='text-xl'>Software/Web Developer</p> */}
+                <div data-aos="fade-left" className='p-3 space-y-9'>
+                    <p className='text-7xl lg:text-9xl italic'>Hello! I'm</p>
+                    <p className='text-4xl lg:text-7xl italic'>MD EMON SHEIKH</p>
                     <h1 className='text-2xl text-white'>
                         {' '}
                         <span>

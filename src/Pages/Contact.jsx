@@ -1,17 +1,22 @@
 import React from 'react';
-import { FaBeer, FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaBeer, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
+import { MdEmail} from 'react-icons/md';
 
 const Contact = () => {
     return (
         <div>
             <section className="rounded-md py-12">
                 <div className="max-w-7xl mx-auto px-4">
-                    <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 w-1/4 mx-auto pb-3  border-b-orange-600">Contact Me</h2>
+                    <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3  border-b-orange-600">Contact Me</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div  data-aos="zoom-in-right">
                             <div className='mt-12 mb-10'>
                                 <h3 className="text-3xl font-semibold mb-2">Find Me On</h3>
                                 <p className="text-white">Feel free to contact</p>
+                            </div>
+                            <div className='mb-14 space-y-4'>
+                                <p className='flex items-center gap-2 text-3xl text-white'><MdEmail /> smdemon3@gmail.com</p>
+                                <p className='flex items-center gap-2 text-3xl text-white'><FaPhoneAlt /> +8801817855902</p>
                             </div>
                             <div className='flex gap-9 text-5xl'>
                                 <p><a href="https://web.facebook.com/smdemon2k17"><FaFacebook /></a></p>
