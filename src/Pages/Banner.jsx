@@ -15,7 +15,7 @@ const Banner = () => {
         console.log(`Done after 5 loops!`)
     }
     return (
-        <div className=''>
+        <div data-aos="fade-up">
             <div className='grid grid-cols-1 lg:grid-cols-2 justify-between items-center'>
                 <div data-aos="fade-left" className='p-3 space-y-9'>
                     <p className='text-7xl lg:text-9xl italic'>Hello! I'm</p>

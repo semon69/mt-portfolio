@@ -21,8 +21,8 @@ const Navbar = () => {
         setMenuOpen(!menuOpen);
     };
     return (
-        <div className='mb-56 lg:mb-24'>
-            <div className='h-20 py-5 fixed w-full bg-black bg-opacity-30 top-0 left-0'>
+        <div className='lg:mb-24'>
+            <div className='h-20 py-5 fixed z-10 w-full bg-black top-0 left-0'>
                 <div className='max-w-7xl mx-auto px-8'>
                     <div className="flex items-center justify-between h-16">
                         <div className="flex-shrink-0">
