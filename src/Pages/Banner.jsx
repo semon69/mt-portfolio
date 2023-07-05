@@ -1,8 +1,7 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter'
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+import 'aos/dist/aos.css';
 AOS.init();
 
 const Banner = () => {

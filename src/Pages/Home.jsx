@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <div className={`px-3`}>
             <Banner></Banner>
-            {/* // <About></About> */}
+             <About></About>
             <Skills></Skills>
             <BestProjects></BestProjects>
             <Services></Services>
