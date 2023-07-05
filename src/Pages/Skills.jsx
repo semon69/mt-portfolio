@@ -10,7 +10,7 @@ const Skills = () => {
     return (
         <div className='my-20'>
             <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3  border-b-orange-600 my-10">My Skills</h2>
-            <div className='grid grid-cols-1 lg:grid-cols-3 justify-between gap-5'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 justify-between items-center gap-5'>
                 <div data-aos="fade-up-right" className='border p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
                     <p className='text-blue-600 inline-flex items-center text-4xl'><AiFillHtml5 /> </p>
                     <p>HTML</p>

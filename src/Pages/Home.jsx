@@ -13,11 +13,8 @@ const Home = () => {
     }
     return (
         <div className={`px-3`}>
-            {/* <div className='text-end block'>
-                <button className='text-end' onClick={handleTheme}>Click</button>
-            </div> */}
             <Banner></Banner>
-            <About></About>
+            {/* // <About></About> */}
             <Skills></Skills>
             <BestProjects></BestProjects>
             <Services></Services>

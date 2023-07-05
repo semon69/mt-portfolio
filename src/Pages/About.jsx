@@ -7,7 +7,7 @@ const About = () => {
         <div data-aos="fade-up">
             <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3  border-b-orange-600 my-10">About Me</h2>
             <div className='lg:flex gap-8'>
-                <div data-aos="fade-right" className='lg:w-1/2'>
+                <div data-aos="fade-right" className='lg:w-1/2 w-full'>
                     <Lottie animationData={anim} loop={true} />
                 </div>
                 <div data-aos="fade-left" className='lg:w-1/2 text-white space-y-3 text-xl'>
