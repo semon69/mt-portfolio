@@ -9,9 +9,9 @@ import 'react-circular-progressbar/dist/styles.css';
 const Skills = () => {
     return (
         <div className='my-20'>
-            <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3  border-b-orange-600 my-10">My Skills</h2>
-            <div className='grid grid-cols-1 lg:grid-cols-3 justify-between items-center gap-5'>
-                <div data-aos="fade-up-right" className='border p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
+            <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3 text-orange-500 border-b-orange-600 my-10">My Skills</h2>
+            <div className='grid grid-cols-1 lg:grid-cols-3 justify-between items-center gap-5 text-black'>
+                <div data-aos="fade-up-right" className='border-2 border-black shadow-xl p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
                     <p className='text-blue-600 inline-flex items-center text-4xl'><AiFillHtml5 /> </p>
                     <p>HTML</p>
                     <CircularProgressbar
@@ -25,7 +25,7 @@ const Skills = () => {
                         })}
                     />
                 </div>
-                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
+                <div data-aos="fade-up" className='border-2 border-black shadow-xl p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
                     <p className='inline-flex items-center text-4xl text-blue-600'><DiCss3 /> </p>
                     <p>CSS</p>
                     <CircularProgressbar
@@ -38,7 +38,7 @@ const Skills = () => {
                             pathColor: '#FF6600'
                         })} />
                 </div>
-                <div data-aos="fade-up-left" className='border p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
+                <div data-aos="fade-up-left" className='border-2 border-black shadow-xl p-4 text-center rounded space-y-3 bg-white text-orange-500  hover:animate-bounce'>
                     <p className='inline-flex items-center text-4xl'><SiJavascript /> </p>
                     <p>JavaScript</p>
                     <CircularProgressbar
@@ -51,7 +51,7 @@ const Skills = () => {
                             pathColor: '#FF6600'
                         })} />
                 </div>
-                <div data-aos="fade-up-right" className='border p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
+                <div data-aos="fade-up-right" className='border-2 border-black shadow-xl p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
                     <p className='inline-flex items-center text-4xl text-blue-400'><SiTailwindcss /> </p>
                     <p>TailwindCSS</p>
                     <CircularProgressbar
@@ -64,7 +64,7 @@ const Skills = () => {
                             pathColor: '#FF6600'
                         })} />
                 </div>
-                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
+                <div data-aos="fade-up" className='border-2 border-black shadow-xl p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
                     <p className='inline-flex items-center text-4xl text-purple-600'><FaBootstrap /> </p>
                     <p>Bootstrap</p>
                     <CircularProgressbar
@@ -77,7 +77,7 @@ const Skills = () => {
                             pathColor: '#FF6600'
                         })} />
                 </div>
-                <div data-aos="fade-up-left" className='border p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
+                <div data-aos="fade-up-left" className='border-2 border-black shadow-xl p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
                     <p className='inline-flex items-center text-4xl text-blue-400'><FaReact /> </p>
                     <p>ReactJS</p>
                     <CircularProgressbar
@@ -90,7 +90,7 @@ const Skills = () => {
                             pathColor: '#FF6600'
                         })} />
                 </div>
-                <div data-aos="fade-up-right" className='border p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
+                <div data-aos="fade-up-right" className='border-2 border-black shadow-xl p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
                     <p className='inline-flex items-center text-4xl text-green-700'><SiMongodb /> </p>
                     <p>MongoDB</p>
                     <CircularProgressbar
@@ -103,7 +103,7 @@ const Skills = () => {
                             pathColor: '#FF6600'
                         })} />
                 </div>
-                <div data-aos="fade-up" className='border p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
+                <div data-aos="fade-up" className='border-2 border-black shadow-xl p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
                     <p className='inline-flex items-center text-4xl text-black'><SiExpress /> </p>
                     <p>ExpressJS</p>
                     <CircularProgressbar
@@ -116,7 +116,7 @@ const Skills = () => {
                             pathColor: '#FF6600'
                         })} />
                 </div>
-                <div data-aos="fade-up-left" className='border p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
+                <div data-aos="fade-up-left" className='border-2 border-black shadow-xl p-4 text-center rounded space-y-3 bg-white   hover:animate-bounce'>
                     <p className='inline-flex items-center text-4xl text-green-700'><FaNodeJs /> </p>
                     <p>NodeJS</p>
                     <CircularProgressbar

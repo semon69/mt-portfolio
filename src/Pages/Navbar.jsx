@@ -1,15 +1,23 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaDownload, FaFileDownload } from 'react-icons/fa';
+import { FaDownload, FaFileDownload, } from 'react-icons/fa';
+import { MdNightlight } from 'react-icons/md';
+import { BsSun } from 'react-icons/bs';
 
-const Navbar = () => {
+const Navbar = ({ color, setColor }) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const downloadPDF = () => {
         const fileURL = 'https://drive.google.com/uc?export=download&id=1XCOvvoV26pSu-CDKDbGU5YRctyihpJdU';
         window.location.href = fileURL;
     };
 
+    const handleTheme = () => {
+        setColor(!color)
+    }
+
     const routes = <>
+
+        <p className='text-xl' onClick={handleTheme}>{color ? <MdNightlight /> : <BsSun />}</p>
         <p><NavLink className={({ isActive }) => isActive ? "text-white font-bold" : ""} to='/'>Home</NavLink></p>
         <p><NavLink className={({ isActive }) => isActive ? "text-white font-bold" : ""} to='/projects'>Projects</NavLink></p>
         <p><NavLink className={({ isActive }) => isActive ? "text-white font-bold" : ""} to='/blog'>Blog</NavLink></p>
@@ -22,7 +30,7 @@ const Navbar = () => {
     };
     return (
         <div className='lg:mb-24'>
-            <div className='h-20 py-5 fixed z-10 w-full bg-black top-0 left-0'>
+            <div className='h-20 py-5 fixed z-10 w-full bg-black top-0 left-0 text-orange-500'>
                 <div className='max-w-7xl mx-auto px-8'>
                     <div className="flex items-center justify-between h-16">
                         <div className="flex-shrink-0">
@@ -30,6 +38,7 @@ const Navbar = () => {
                                 <span className="text-white text-lg font-semibold"><img className='w-28' src="https://i.ibb.co/RN9Pdgb/logo.jpg" alt="" /></span>
                             </a>
                         </div>
+
                         <div className="hidden md:block">
                             <div className="ml-10 flex items-baseline font-bold text-xl space-x-16">
                                 {routes}
