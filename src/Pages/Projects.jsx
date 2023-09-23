@@ -43,9 +43,8 @@ const Projects = () => {
                         <p className='text-3xl pb-3 font-semibold'>Let's Go</p>
                         <p className='font-semibold py-3'>Discover your dream destinations, find the perfect hotel, and book your flights seamlessly with us. 'Let's Go' empowers travelers to explore the world effortlessly. Whether you crave adventure, cultural immersion, or relaxation, our platform provides a diverse array of choices. Create personalized itineraries, join a vibrant travel community. We prioritize your safety and security.</p>
                         <div className='flex justify-between'>
-                            <button className='border-2 px-4 py-2 rounded bg-orange-600 hover:bg-orange-800 text-white font-bold '><a href="https://github.com/semon69/Super-hero">Github Client Link</a></button>
-                            <button className='border-2 px-4 py-2 rounded bg-orange-600 hover:bg-orange-800 text-white font-bold '><a href="https://github.com/semon69/super-hero-server">Github Server Link</a></button>
-                            <button className='border-2 px-4 py-2 rounded bg-orange-600 hover:bg-orange-800 text-white font-bold '><a href="https://super-heros-27f87.web.app/">Live Link</a></button>
+                            <button className='border-2 px-4 py-2 rounded bg-orange-600 hover:bg-orange-800 text-white font-bold '><a href="https://github.com/semon69/team-project-lets-go">Github Link</a></button>
+                            <button className='border-2 px-4 py-2 rounded bg-orange-600 hover:bg-orange-800 text-white font-bold '><a href="https://team-project-lets-go.vercel.app/">Live Link</a></button>
                         </div>
                     </div>
                 </div>

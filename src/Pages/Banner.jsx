@@ -2,6 +2,7 @@ import React from 'react';
 import { Typewriter } from 'react-simple-typewriter'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './Main.css'
 AOS.init();
 
 const Banner = () => {
@@ -14,10 +15,10 @@ const Banner = () => {
         console.log(`Done after 5 loops!`)
     }
     return (
-        <div data-aos="fade-up">
-            <div className='grid grid-cols-1 lg:grid-cols-2 justify-between items-center text-orange-500'>
+        <div className='mt-14 md:mt-28' data-aos="fade-up">
+            <div className='grid grid-cols-1 lg:grid-cols-2 justify-between items-center'>
                 <div data-aos="fade-left" className='p-3 space-y-9'>
-                    <p className='text-7xl lg:text-9xl italic mt-20 lg:mt-5'>Hello! I'm</p>
+                    <p className='text-3xl lg:text-5xl italic mt-20 lg:mt-5'>Hello! I'm</p>
                     <p className='text-4xl lg:text-7xl italic'>MD EMON SHEIKH</p>
                     <h1 className='text-2xl '>
                         {' '}
@@ -35,10 +36,11 @@ const Banner = () => {
                             />
                         </span>
                     </h1>
+                    <p>I am a skilled web developer proficient in React, Express.js, MongoDB, and Node.js. With a passion for creating dynamic and efficient web solutions, I thrive in the digital realm</p>
                     <button className='border-2 px-4 py-2 rounded bg-orange-600 hover:bg-orange-800 text-white font-bold'><a href="https://drive.google.com/file/d/1XCOvvoV26pSu-CDKDbGU5YRctyihpJdU/view?usp=sharing">Get Resume</a></button>
                 </div>
-                <div data-aos="fade-left">
-                    <img className='md:h-[600px] h-[400px] lg:ms-10' src="https://i.ibb.co/w6LRDPs/emon.png" alt="" />
+                <div className='banner-img-container rounded-full md:ms-10' data-aos="fade-left">
+                    <img className='banner-img' src="https://i.ibb.co/CMX6Rb9/emon2.png" alt="" />
                 </div>
             </div>
         </div>

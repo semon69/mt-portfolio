@@ -15,22 +15,33 @@
 }
 
 .image1{
-    background: url('./../../public/images/la-masia.png');
+    background: url('/images/la-masia.png');
     background-size: cover;
 }
 .image2{
-    background: url('./../../public/images/toys.png');
+    background: url('/images/toys.png');
     background-size: cover;
 }
 .image3{
-    background: url('./../../public/images/lets\ go.png');
+    background: url('/images/lets\ go.png');
     background-size: cover;
 }
 .image4{
-    background: url('./../../public/images/chef.png');
+    background: url('/images/chef.png');
     background-size: cover;
 }
 
 .image:hover{
     background-position: bottom;
+}
+
+.banner-img-container{
+    height: 500px;
+    width: 500px;
+    background-color: aliceblue;
+    
+}
+.banner-img{
+    height: 420px;
+    width: 520px;
 }
