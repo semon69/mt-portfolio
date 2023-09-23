@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { FaDownload, FaFileDownload, } from 'react-icons/fa';
 import { MdNightlight } from 'react-icons/md';
 import { BsSun } from 'react-icons/bs';
+import './Main.css'
 
 const Navbar = ({ color, setColor }) => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ const Navbar = ({ color, setColor }) => {
     };
     return (
         <div className='lg:mb-24'>
-            <div className='h-20 py-5 fixed z-10 w-full bg-black top-0 left-0 text-orange-500'>
+            <div className='h-20 py-5 fixed z-10 w-full bg-navbar top-0 left-0 text-orange-500 bg-opacity-90'>
                 <div className='max-w-7xl mx-auto px-8'>
                     <div className="flex items-center justify-between h-16">
                         <div className="flex-shrink-0">
