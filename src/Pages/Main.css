@@ -22,6 +22,14 @@
     background: url('./../../public/images/toys.png');
     background-size: cover;
 }
+.image3{
+    background: url('./../../public/images/lets\ go.png');
+    background-size: cover;
+}
+.image4{
+    background: url('./../../public/images/chef.png');
+    background-size: cover;
+}
 
 .image:hover{
     background-position: bottom;

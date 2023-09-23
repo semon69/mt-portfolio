@@ -36,7 +36,23 @@ const Projects = () => {
                     </div>
                 </div>
                 <div data-aos="zoom-in-down" className='border-2 rounded shadow-xl my-16'>
-                    <img className='h-[380px]' src="https://i.ibb.co/ZmWCDmR/chefs.png" alt="" />
+                    <div className='image image3'>
+
+                    </div>
+                    <div className='p-5'>
+                        <p className='text-3xl pb-3 font-semibold'>Let's Go</p>
+                        <p className='font-semibold py-3'>Discover your dream destinations, find the perfect hotel, and book your flights seamlessly with us. 'Let's Go' empowers travelers to explore the world effortlessly. Whether you crave adventure, cultural immersion, or relaxation, our platform provides a diverse array of choices. Create personalized itineraries, join a vibrant travel community. We prioritize your safety and security.</p>
+                        <div className='flex justify-between'>
+                            <button className='border-2 px-4 py-2 rounded bg-orange-600 hover:bg-orange-800 text-white font-bold '><a href="https://github.com/semon69/Super-hero">Github Client Link</a></button>
+                            <button className='border-2 px-4 py-2 rounded bg-orange-600 hover:bg-orange-800 text-white font-bold '><a href="https://github.com/semon69/super-hero-server">Github Server Link</a></button>
+                            <button className='border-2 px-4 py-2 rounded bg-orange-600 hover:bg-orange-800 text-white font-bold '><a href="https://super-heros-27f87.web.app/">Live Link</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in-down" className='border-2 rounded shadow-xl my-16'>
+                    <div className='image image4'>
+
+                    </div>
                     <div className='p-5'>
                         <p className='text-2xl pb-3 font-semibold'>French Chef's</p>
                         <p className='font-semibold py-3'>This a website of french chef's. You can find your favorite chef in your website. Look at our menu. Various kind of europian food you can get at cheap price. You can see blog page where we answered your frequently asked question. You can register or login using your email and password. It gives you error message if something doesn't match our policy.</p>
