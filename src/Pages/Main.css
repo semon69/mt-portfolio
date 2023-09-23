@@ -1,6 +1,28 @@
 .bg-color{
-    background-color: rgb(1, 24, 56);
+    /* background-color: rgb(1, 24, 56); */
+    background: linear-gradient(to right ,#000428, #01427a);
 }
 .bg-navbar{
-    background-color: rgb(1, 13, 30);
+    background-color: rgb(1, 32, 75);
+}
+
+.image{
+    height: 380px;
+    width: 100%;
+    background: black;
+    background-position: top;
+    transition: ease-in-out 11s;
+}
+
+.image1{
+    background: url('./../../public/images/la-masia.png');
+    background-size: cover;
+}
+.image2{
+    background: url('./../../public/images/toys.png');
+    background-size: cover;
+}
+
+.image:hover{
+    background-position: bottom;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import textEditor from '../assets/images/text editor.png'
+import './Main.css'
 
 const Projects = () => {
     return (
@@ -7,7 +8,9 @@ const Projects = () => {
             <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3 text-orange-500 border-b-orange-600 my-10">All Projects</h2>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                 <div data-aos="zoom-in-down" className='border-2 rounded shadow-xl  my-16'>
-                    <img className='h-[380px]' src="https://i.ibb.co/QKZsFys/la-masia.png" alt="" />
+                    <div className='image image1'>
+
+                    </div>
                     <div className='p-5'>
                         <p className='text-3xl pb-3 font-semibold'>La Masia Sports Academy</p>
                         <p className='font-semibold py-3'>This is a sports academy. You can find your favorite sports to learn. There are many instructor to teach you. You can select multiple sports and pay for your selected sports. There are 3 different dashboard for student, instructor and admin. Instructor can add classes. If admin approved these classes it will show in classes page. An admin can set users role.</p>
@@ -19,7 +22,9 @@ const Projects = () => {
                     </div>
                 </div>
                 <div data-aos="zoom-in-down" className='border-2 rounded shadow-xl my-16'>
-                    <img className='h-[380px]' src="https://i.ibb.co/gVC38QP/toys.png" alt="" />
+                    <div className='image image2'>
+
+                    </div>
                     <div className='p-5'>
                         <p className='text-3xl pb-3 font-semibold'>Super Hero Toys</p>
                         <p className='font-semibold py-3'>This a toy shop, specially for those who love super heros. They can find there favorite super hero character toy in this shop. Everyone has to login to see toy details. After login, they can add there own toys. They can shop by category like Avengers, Star wars are different pages. They can get discount on top trending toys.</p>

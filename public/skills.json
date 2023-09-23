@@ -1,0 +1,62 @@
+[
+    {
+      "name": "HTML",
+      "id": "person1_id",
+      "image": "./images/html.png"
+    },
+    {
+      "name": "CSS",
+      "id": "person2_id",
+      "image": "./images/css.png"
+    },
+    {
+      "name": "JAVASCRIPT",
+      "id": "person3_id",
+      "image": "./images/js.png"
+    },
+    {
+      "name": "REACT",
+      "id": "person4_id",
+      "image": "./images/react.png"
+    },
+    {
+      "name": "NODEJS",
+      "id": "person5_id",
+      "image": "./images/node.png"
+    },
+    {
+      "name": "MONGODB",
+      "id": "person6_id",
+      "image": "./images/mdb.png"
+    },
+    {
+      "name": "FIREBASE",
+      "id": "person7_id",
+      "image": "./images/fire.png"
+    },
+    {
+      "name": "EXPRESSJS",
+      "id": "person8_id",
+      "image": "./images/ex.png"
+    },
+    {
+      "name": "TAILWIND CSS",
+      "id": "person9_id",
+      "image": "./images/tail2.png"
+    },
+    {
+      "name": "BOOTSTRAP",
+      "id": "person10_id",
+      "image": "./images/bt.png"
+    },
+    {
+      "name": "PYTHON",
+      "id": "person10_id",
+      "image": "./images/py.png"
+    },
+    {
+      "name": "NPM",
+      "id": "person10_id",
+      "image": "./images/npm.png"
+    }
+  ]
