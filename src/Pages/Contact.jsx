@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaBeer, FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import emailjs from 'emailjs-com';
+import './Main.css'
 
 const Contact = () => {
     // ser = 'service_3tc3p99'
@@ -79,7 +80,7 @@ const Contact = () => {
                                         <label className="block  text-sm font-medium mb-2" htmlFor="message">Message</label>
                                         <textarea className="border border-gray-300 rounded-md py-2 px-3 w-full h-32" id="message" name="message" required onChange={(e) => setMessage(e.target.value)} ></textarea>
                                     </div>
-                                    <button className="border-2 px-4 py-2 rounded bg-orange-600 hover:bg-orange-800 text-white font-bold " type='submit'>Send Message</button>
+                                    <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold " type='submit'>Send Message</button>
                                 </form>
                             </div>
                         </div>

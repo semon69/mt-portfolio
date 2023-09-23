@@ -37,7 +37,7 @@ const Banner = () => {
                         </span>
                     </h1>
                     <p>I am a skilled web developer proficient in React, Express.js, MongoDB, and Node.js. With a passion for creating dynamic and efficient web solutions, I thrive in the digital realm</p>
-                    <button className='border-2 px-4 py-2 rounded bg-orange-600 hover:bg-orange-800 text-white font-bold'><a href="https://drive.google.com/file/d/1XCOvvoV26pSu-CDKDbGU5YRctyihpJdU/view?usp=sharing">Get Resume</a></button>
+                    <button className='border-2 px-4 py-2 rounded local-btn text-white font-bold'><a href="https://drive.google.com/file/d/1XCOvvoV26pSu-CDKDbGU5YRctyihpJdU/view?usp=sharing">Get Resume</a></button>
                 </div>
                 <div className='banner-img-container rounded-full md:ms-10' data-aos="fade-left">
                     <img className='banner-img' src="https://i.ibb.co/CMX6Rb9/emon2.png" alt="" />

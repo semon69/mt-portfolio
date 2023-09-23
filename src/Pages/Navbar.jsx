@@ -23,7 +23,7 @@ const Navbar = ({ color, setColor }) => {
         <p><NavLink className={({ isActive }) => isActive ? "text-white font-bold" : ""} to='/projects'>Projects</NavLink></p>
         <p><NavLink className={({ isActive }) => isActive ? "text-white font-bold" : ""} to='/blog'>Blog</NavLink></p>
         <p><NavLink className={({ isActive }) => isActive ? "text-white font-bold" : ""} to='/contact'>Contact Me</NavLink></p>
-        <p><NavLink onClick={downloadPDF} className='inline-flex items-center gap-2 border-2 px-4 py-2 rounded bg-orange-600 hover:bg-orange-800 text-white font-bold '>  <FaFileDownload />  Resume</NavLink></p>
+        <p><NavLink onClick={downloadPDF} className='inline-flex items-center gap-2 border-2 px-4 py-2 rounded local-btn text-white font-bold '>  <FaFileDownload />  Resume</NavLink></p>
     </>
 
     const toggleMenu = () => {

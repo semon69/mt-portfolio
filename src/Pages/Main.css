@@ -45,3 +45,7 @@
     height: 420px;
     width: 520px;
 }
+
+.local-btn{
+    background: linear-gradient(to right ,#ec6724, #b31215);
+}
