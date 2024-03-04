@@ -143,7 +143,7 @@ const Skills = () => {
                     skills.map(skill =>
                         <div className='text-center my-3' key={skill.id}>
                             <div className='inline-flex justify-center items-center border bg-white w-44 h-44 rounded-full p-2 hover:scale-110'>
-                                <img className='w-32 h-32' src={skill.image} alt="" />
+                                <img className='w-32 h-32 rounded-md' src={skill.image} alt="" />
                             </div>
                             <p className='text-2xl fw-bold pt-3'>{skill.name}</p>
                         </div>

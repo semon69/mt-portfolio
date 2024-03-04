@@ -1,0 +1,18 @@
+[
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzSKVb9R_yfJ9NN3Gv_bind3jCNSd_iigw_evT4YuDff9wx7UCyJlPz7ee9Evpfj7rkwA&usqp=CAU",
+    "title": "Difference between controlled and uncontrolled components",
+    "description": "In React, the distinction between controlled and uncontrolled components lies in how form element states are managed. Controlled components have their state controlled by React; this means that the value of the form element is tied to the component's state, and updates to the element are managed through event handlers like onChange. This approach offers precise control over the form's behavior and facilitates synchronization between the component's state and the UI. On the other hand, uncontrolled components maintain their state internally within the DOM itself, rather than being managed by React's state. Here, the value of the form element is accessed directly through a reference to the DOM node using useRef. Uncontrolled components are beneficial when integrating React with existing non-React codebases or when a more direct approach to form management is preferred. While controlled components provide greater predictability and are typically favored for their ease of integration with React's data flow, uncontrolled components offer flexibility and may be suitable for specific use cases where direct access to the DOM is necessary"
+  },
+
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2EkD5qgFhYk6gytleY5eWFebj7dhytSc2dw&usqp=CAU",
+    "title": " Validate React props using PropTypes",
+    "description": "In React, PropTypes is a mechanism for validating the props passed to a component. It helps ensure that the expected data types are provided for props, reducing the chances of bugs and making the code more robust. By defining PropTypes for a component, developers can specify the expected types for each prop, such as string, number, array, object, function, etc. If the provided props do not match the defined types, React will issue a warning in the browser console during development, alerting developers to potential issues. PropTypes also serve as documentation, providing insights into the expected props for a component. This enhances code readability and helps maintain consistency across the application. While PropTypes are primarily used for development purposes, they can be omitted in production builds to reduce bundle size. However, they remain a valuable tool for ensuring data integrity and improving the reliability of React components."
+  },
+  {
+    "image": "/images/post.png",
+    "title": "What is PostgreSQL?",
+    "description": "PostgreSQL is an object-relational database management system. It is an advanced, enterprise-class, and open-source relational database system. It supports both SQL (relational) and JSON (non-relational) querying. It is a highly stable database backed by more than 20 years of development by the open-source community. It is used as a primary database for many web applications as well as mobile and analytics applications."
+  }
+]

@@ -1,62 +1,103 @@
 [
+    
+    {
+      "name": "JAVASCRIPT",
+      "id": 1,
+      "image": "./images/js.png"
+    },
+    {
+      "name": "TYPESCRIPT",
+      "id": 2,
+      "image": "./images/ts.png"
+    },
+    {
+      "name": "REACT",
+      "id": 3,
+      "image": "./images/react.png"
+    },
+    {
+      "name": "REDUX",
+      "id": 16,
+      "image": "./images/redux.png"
+    },
+    {
+      "name": "NODEJS",
+      "id": 4,
+      "image": "./images/node.png"
+    },
+    {
+      "name": "POSTGRESQL",
+      "id": 17,
+      "image": "./images/post.png"
+    },
+    {
+      "name": "EXPRESSJS",
+      "id": 5,
+      "image": "./images/ex.png"
+    },
+    {
+      "name": "MONGODB",
+      "id": 6,
+      "image": "./images/mdb.png"
+    },
+    {
+      "name": "MONGOOSE",
+      "id": 7,
+      "image": "./images/mongo.png"
+    },
     {
       "name": "HTML",
-      "id": "person1_id",
+      "id": 8,
       "image": "./images/html.png"
     },
     {
       "name": "CSS",
-      "id": "person2_id",
+      "id": 9,
       "image": "./images/css.png"
-    },
-    {
-      "name": "JAVASCRIPT",
-      "id": "person3_id",
-      "image": "./images/js.png"
-    },
-    {
-      "name": "REACT",
-      "id": "person4_id",
-      "image": "./images/react.png"
-    },
-    {
-      "name": "NODEJS",
-      "id": "person5_id",
-      "image": "./images/node.png"
-    },
-    {
-      "name": "MONGODB",
-      "id": "person6_id",
-      "image": "./images/mdb.png"
-    },
-    {
-      "name": "FIREBASE",
-      "id": "person7_id",
-      "image": "./images/fire.png"
-    },
-    {
-      "name": "EXPRESSJS",
-      "id": "person8_id",
-      "image": "./images/ex.png"
-    },
+    }, 
     {
       "name": "TAILWIND CSS",
-      "id": "person9_id",
+      "id": 10,
       "image": "./images/tail2.png"
     },
     {
       "name": "BOOTSTRAP",
-      "id": "person10_id",
+      "id": 11,
       "image": "./images/bt.png"
     },
     {
+      "name": "FIREBASE",
+      "id": 12,
+      "image": "./images/fire.png"
+    },
+    {
       "name": "PYTHON",
-      "id": "person10_id",
+      "id": 13,
       "image": "./images/py.png"
     },
     {
+      "name": "JWT",
+      "id": 14,
+      "image": "./images/jwt.png"
+    },
+    {
       "name": "NPM",
-      "id": "person10_id",
+      "id": 18,
       "image": "./images/npm.png"
+    },
+    {
+      "name": "NEXTJS",
+      "id": 15,
+      "image": "./images/next.png"
+    },
+    {
+      "name": "VERCEL",
+      "id": 19,
+      "image": "./images/vercel.png"
+    },
+    {
+      "name": "POSTMAN",
+      "id": 20,
+      "image": "./images/postman.png"
     }
   ]

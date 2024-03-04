@@ -23,11 +23,15 @@
     background-size: cover;
 }
 .image3{
-    background: url('/images/lets\ go.png');
+    background: url('/images/letsgo.png');
     background-size: cover;
 }
 .image4{
     background: url('/images/chef.png');
+    background-size: cover;
+}
+.image5{
+    background: url('/images/flower-m.png');
     background-size: cover;
 }
 

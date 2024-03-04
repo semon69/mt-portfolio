@@ -8,7 +8,7 @@ import './Main.css'
 const Navbar = ({ color, setColor }) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const downloadPDF = () => {
-        const fileURL = 'https://drive.google.com/uc?export=download&id=1XCOvvoV26pSu-CDKDbGU5YRctyihpJdU';
+        const fileURL = 'https://drive.google.com/uc?export=download&id=1cEIca7lwaWQ6vn4Np_2vwdLYS3TCrkeV';
         window.location.href = fileURL;
     };
 
