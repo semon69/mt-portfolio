@@ -48,7 +48,7 @@ const Banner = () => {
             efficient web solutions, I thrive in the digital realm
           </p>
           <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold">
-            <a href="https://drive.google.com/file/d/1cEIca7lwaWQ6vn4Np_2vwdLYS3TCrkeV/view">
+            <a href="https://drive.google.com/file/d/1pGO7eUCXN4tzTtQEI6XWl2xtoEnsaVHO/view?usp=sharing">
               Get Resume
             </a>
           </button>

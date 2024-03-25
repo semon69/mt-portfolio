@@ -8,10 +8,10 @@ import './Main.css'
 const Navbar = ({ color, setColor }) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const downloadPDF = () => {
-        const fileURL = 'https://drive.google.com/uc?export=download&id=1cEIca7lwaWQ6vn4Np_2vwdLYS3TCrkeV';
+        const fileURL = 'https://drive.google.com/uc?export=download&id=1pGO7eUCXN4tzTtQEI6XWl2xtoEnsaVHO';
         window.location.href = fileURL;
     };
-
+// https://drive.google.com/file/d/1pGO7eUCXN4tzTtQEI6XWl2xtoEnsaVHO/view?usp=sharing
     const handleTheme = () => {
         setColor(!color)
     }

@@ -54,7 +54,7 @@ const Projects = () => {
           <div className="image image1"></div>
           <div className="p-5">
             <p className="text-3xl pb-3 font-semibold">
-              La Masia Sports Academy
+              Elite Export Sports Academy
             </p>
             <p className="font-semibold py-3">
               This is a sports academy. You can find your favorite sports to
@@ -68,12 +68,12 @@ const Projects = () => {
             </p>
             <div className="flex justify-between">
               <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold ">
-                <a href="https://github.com/semon69/La-Masia-Client-">
+                <a href="https://github.com/semon69/Elite-export-client">
                   Github Client Link
                 </a>
               </button>
               <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold ">
-                <a href="https://github.com/semon69/La-Masia-server-">
+                <a href="https://github.com/semon69/Elite-export-server-">
                   Github Server Link
                 </a>
               </button>

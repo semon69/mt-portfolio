@@ -19,24 +19,24 @@ const BestProjects = () => {
           </div>
           <div className="p-5">
             <p className="text-2xl pb-3 font-semibold">
-              La Masia Sports Academy
+              Elite Export Sports Academy
             </p>
             <p className="font-semibold py-3">
               This is a sports academy. You can find your favorite sports to
               learn. There are many instructor to teach you. You can select
               multiple sports and pay for your selected sports. There are 3
               different dashboard for student, instructor and admin. Instructor
-              can add classes. If admin approved these classes it will show in
+              can add classes. If admin approved these classes it will show ins
               classes page. An admin can set users role.
             </p>
             <div className="flex justify-between">
               <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold text-sm md:text-base">
-                <a href="https://github.com/semon69/La-Masia-Client-">
+                <a href="https://github.com/semon69/Elite-export-client">
                   Github Client
                 </a>
               </button>
               <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold text-sm md:text-base">
-                <a href="https://github.com/semon69/La-Masia-server-">
+                <a href="https://github.com/semon69/Elite-export-server-">
                   Github Server
                 </a>
               </button>
