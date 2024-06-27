@@ -40,7 +40,7 @@ const Contact = () => {
             <div className='pt-28 md:pt-8'>
                 <section className="rounded-md">
                     <div className="max-w-7xl mx-auto px-4">
-                        <h2 className="text-4xl text-center text-orange-500 mb-8 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3  border-b-orange-600">Contact Me</h2>
+                        <h2 className="text-4xl text-center text-orange-500 mb-8 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3  border-b-orange-600">Reach Me</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className='' data-aos="zoom-in-right">
                                 <div className='mt-12 mb-10 text-orange-500'>

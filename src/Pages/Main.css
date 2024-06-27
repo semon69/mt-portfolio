@@ -34,6 +34,10 @@
     background: url('/images/flower-m.png');
     background-size: cover;
 }
+.image6{
+    background: url('/images/blood.png');
+    background-size: cover;
+}
 
 .image:hover{
     background-position: bottom;

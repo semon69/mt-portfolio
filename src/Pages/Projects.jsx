@@ -5,13 +5,54 @@ import "./Main.css";
 const Projects = () => {
   return (
     <div className="pt-16 md:pt-0 p-2">
-      <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3 text-orange-500 border-b-orange-600 my-10">
+      <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3 text-orange-500 border-b-orange-600 mt-10">
         All Projects
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
         <div
           data-aos="zoom-in-down"
-          className="border-2 rounded shadow-xl  my-16"
+          className="border-2 rounded shadow-xl  my-5"
+        >
+          <div className="image image6"></div>
+          <div className="p-5">
+            <p className="text-3xl pb-3 font-semibold">
+              RedLove - Blood Donation
+            </p>
+            <p className="font-semibold py-3">
+              I developed a blood donation website with a prominent logo and
+              navigation bar, a hero section featuring a "Search Donors" button,
+              and an About section outlining its mission. The site includes
+              coverage areas, success stories, donation tips, and testimonials.
+              It offers user-friendly login and registration forms, a donor list
+              with search and filter options, and detailed donor profiles with a
+              "Request Blood" button. Users can submit blood requests through a
+              dedicated form, and manage their profiles, information, and
+              requests. An admin dashboard facilitates user account management.
+              You can visit as admin to see admin features, email:
+              emon@gmail.com. Password: 1234
+            </p>
+            <div className="flex justify-between">
+              <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold ">
+                <a href="https://github.com/semon69/blood-donation-frontend">
+                  Github Client Link
+                </a>
+              </button>
+              <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold ">
+                <a href="https://github.com/semon69/blood-donation-api">
+                  Github Server Link
+                </a>
+              </button>
+              <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold ">
+                <a href="https://blood-donation-client-nine.vercel.app/">
+                  Live Link
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          data-aos="zoom-in-down"
+          className="border-2 rounded shadow-xl  my-5"
         >
           <div className="image image5"></div>
           <div className="p-5">
@@ -23,6 +64,9 @@ const Projects = () => {
               log in, enables new users to create accounts using JWT. Overview
               of flowers and sales. Create, Update, Delete, and Edit products.
               Create flowers variants. Log sales transactions with relevant
+              details. View and track historical sales data. Users can search
+              for a flower and initiate a sale. Removal of product from
+              inventory when quantity reaches zero. You can visit as admin to
               details. View and track historical sales data. Users can search
               for a flower and initiate a sale. Removal of product from
               inventory when quantity reaches zero. You can visit as admin to
@@ -49,7 +93,7 @@ const Projects = () => {
         </div>
         <div
           data-aos="zoom-in-down"
-          className="border-2 rounded shadow-xl  my-16"
+          className="border-2 rounded shadow-xl  my-5"
         >
           <div className="image image1"></div>
           <div className="p-5">
@@ -61,10 +105,10 @@ const Projects = () => {
               learn. There are many instructor to teach you. You can select
               multiple sports and pay for your selected sports. Card payment
               system implemented for online payment using Stripe. User can see
-              their enroll classes after payment. There are 3 different dashboard
-              for student, instructor and admin. Instructor can add classes. If
-              admin approved these classes it will show in classes page. An
-              admin can set users role.
+              their enroll classes after payment. There are 3 different
+              dashboard for student, instructor and admin. Instructor can add
+              classes. If admin approved these classes it will show in classes
+              page. An admin can set users role.
             </p>
             <div className="flex justify-between">
               <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold ">
@@ -85,7 +129,7 @@ const Projects = () => {
         </div>
         <div
           data-aos="zoom-in-down"
-          className="border-2 rounded shadow-xl my-16"
+          className="border-2 rounded shadow-xl my-5"
         >
           <div className="image image2"></div>
           <div className="p-5">
@@ -96,7 +140,9 @@ const Projects = () => {
               Everyone has to login to see toy details. After login, they can
               add there own toys. They can shop by category like Avengers, Star
               wars are different pages. They can get discount on top trending
-              toys.
+              toys. wars are different pages. They can get discount on top
+              trending toys. wars are different pages. They can get discount on
+              top trending toys. trending toys. wars are different pages.
             </p>
             <div className="flex justify-between">
               <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold ">
@@ -117,7 +163,7 @@ const Projects = () => {
         </div>
         <div
           data-aos="zoom-in-down"
-          className="border-2 rounded shadow-xl my-16"
+          className="border-2 rounded shadow-xl my-5"
         >
           <div className="image image3"></div>
           <div className="p-5">
@@ -144,7 +190,7 @@ const Projects = () => {
         </div>
         <div
           data-aos="zoom-in-down"
-          className="border-2 rounded shadow-xl my-16"
+          className="border-2 rounded shadow-xl my-5"
         >
           <div className="image image4"></div>
           <div className="p-5">
@@ -178,7 +224,7 @@ const Projects = () => {
         </div>
         <div
           data-aos="zoom-in-down"
-          className="border-2 rounded shadow-xl my-16"
+          className="border-2 rounded shadow-xl my-5"
         >
           <img className="h-[380px]" src={textEditor} alt="" />
           <div className="p-5">

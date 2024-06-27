@@ -14,9 +14,9 @@ const Banner = () => {
     console.log(`Done after 5 loops!`);
   };
   return (
-    <div className="mt-14 md:mt-28" data-aos="fade-up">
+    <div className="mt-14 md:mt-24" data-aos="fade-up">
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-between items-center">
-        <div data-aos="fade-left" className="p-3 space-y-9">
+        <div data-aos="fade-left" className="p-3 space-y-6">
           <p className="text-3xl lg:text-5xl italic mt-20 lg:mt-5">
             Hello! I'm
           </p>
@@ -25,12 +25,7 @@ const Banner = () => {
             {" "}
             <span>
               <Typewriter
-                words={[
-                  "Software Developer",
-                  "Web Developer",
-                  "Frontend Developer",
-                  "MERN-Stack Developer",
-                ]}
+                words={["Software Engineer", "Full-Stack Developer"]}
                 loop={5}
                 cursor
                 cursorStyle="_"
@@ -43,13 +38,17 @@ const Banner = () => {
             </span>
           </h1>
           <p>
-            I am a skilled web developer proficient in React, Express.js,
-            MongoDB, and Node.js. With a passion for creating dynamic and
-            efficient web solutions, I thrive in the digital realm
+            I am a skilled Full Stack developer proficient in React, NextJs,
+            MongoDB, PostgreSQL, and Node.js. With a passion for creating
+            dynamic and efficient web solutions, I thrive in the digital realm
+          </p>
+          <p className="italic">
+            Currently working as a Backend developer at{" "}
+            <span className="text-orange-500">Diligent Soft It</span>.
           </p>
           <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold">
-            <a href="https://drive.google.com/file/d/1pGO7eUCXN4tzTtQEI6XWl2xtoEnsaVHO/view?usp=sharing">
-              Get Resume
+            <a href="https://drive.google.com/file/d/1bERsxfQ8YEpvopOmim-gVLfi6a0218xv/view?usp=sharing">
+              View Resume
             </a>
           </button>
         </div>
@@ -59,6 +58,7 @@ const Banner = () => {
         >
           <img
             className="banner-img"
+            // src="https://i.ibb.co/qdZLNck/emon2.jpg"
             src="https://i.ibb.co/CMX6Rb9/emon2.png"
             alt=""
           />
