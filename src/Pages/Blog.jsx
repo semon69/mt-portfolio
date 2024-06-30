@@ -9,6 +9,7 @@ const Blog = () => {
   }, []);
 
   const [blogs, setBlogs] = useState([]);
+  
   useEffect(() => {
     fetch("https://portfolio-server-cyan.vercel.app/api/v1/blog")
       .then((res) => res.json())

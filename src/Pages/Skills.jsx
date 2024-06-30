@@ -3,13 +3,13 @@ import "react-circular-progressbar/dist/styles.css";
 
 const Skills = () => {
   const [skills, setSkills] = useState([]);
-//   console.log(skills);
+  
   useEffect(() => {
     fetch("https://portfolio-server-cyan.vercel.app/api/v1/skill")
       .then((res) => res.json())
       .then((data) => setSkills(data));
   }, [skills]);
-//   console.log(skills);
+  
   return (
     <div className="my-20">
       <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3 text-orange-500 border-b-orange-600 my-10">
