@@ -8,8 +8,6 @@ const Blog = () => {
       .then((data) => setBlogs(data));
   }, []);
 
-  console.log(blogs);
-
   return (
     <div className="space-y-10 pt-16 md:pt-0 p-2">
       <h2 className="text-4xl text-center mb-8 font-bold text-orange-500 italic border-b-4 lg:w-1/4 lg:mx-auto pb-3  border-b-orange-600 my-10">
@@ -29,10 +27,10 @@ const Blog = () => {
               <p className="font-semibold text-xl text-orange-500">
                 {blog?.title}
               </p>
-              <p>
-                {" "}
+              {/* <p>
                 {"=>"} {blog?.description}
-              </p>
+              </p> */}
+              <div dangerouslySetInnerHTML={{ __html: blog?.description }} />
             </div>
           </div>
         ))}
