@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 const ProjectDetails = () => {
   const project = useLoaderData();
-  //   console.log(project);
+  
   useEffect(() => {
     window.scrollTo({
       top: 0,

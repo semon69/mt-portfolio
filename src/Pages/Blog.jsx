@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     fetch("https://portfolio-server-cyan.vercel.app/api/v1/blog")

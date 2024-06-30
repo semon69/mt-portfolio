@@ -3,6 +3,14 @@ import "./Main.css";
 import { NavLink } from "react-router-dom";
 
 const Projects = () => {
+  
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     fetch("https://portfolio-server-cyan.vercel.app/api/v1/project")
