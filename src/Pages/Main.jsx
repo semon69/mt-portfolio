@@ -1,21 +1,25 @@
-import React, { useState } from 'react';
-import { Outlet } from 'react-router-dom';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import './Main.css'
+import React, { useState } from "react";
+import { Outlet } from "react-router-dom";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import "./Main.css";
 
 const Main = () => {
-    const [color, setColor] = useState(false)
+  const [color, setColor] = useState(false);
 
-    return (
-        <div className={` ${color ? 'bg-white text-black' : 'bg-color text-white'} `}>
-            <div className='max-w-7xl mx-auto overflow-hidden'>
-                <Navbar color={color} setColor={setColor}></Navbar>
-                <Outlet></Outlet>
-                <Footer></Footer>
-            </div>
+  return (
+    <div
+      className={` ${color ? "bg-white text-black" : "bg-color text-white"} `}
+    >
+      <div className="max-w-7xl mx-auto overflow-hidden">
+        <Navbar color={color} setColor={setColor}></Navbar>
+        <div className="min-h-screen">
+          <Outlet></Outlet>
         </div>
-    );
+        <Footer></Footer>
+      </div>
+    </div>
+  );
 };
 
 export default Main;

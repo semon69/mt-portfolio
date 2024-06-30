@@ -3,11 +3,12 @@ import { Typewriter } from "react-simple-typewriter";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Main.css";
+import { Link } from "react-router-dom";
 AOS.init();
 
 const Banner = () => {
   const handleType = (count) => {
-    console.log(count);
+    // console.log(count);
   };
 
   const handleDone = () => {
@@ -44,13 +45,21 @@ const Banner = () => {
           </p>
           <p className="italic">
             Currently working as a Backend developer at{" "}
-            <span className="text-orange-500">Diligent Soft It</span>.
+            <span className="text-orange-500 font-bold text-xl">
+              Diligent Soft It
+            </span>
+            .
           </p>
-          <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold">
-            <a href="https://drive.google.com/file/d/1bERsxfQ8YEpvopOmim-gVLfi6a0218xv/view?usp=sharing">
-              View Resume
-            </a>
-          </button>
+          <div className="flex gap-3">
+            <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold">
+              <Link to={'/projects'}>Explore Project</Link>
+            </button>
+            <button className="border-2 px-4 py-2 rounded text-orange-500 font-bold">
+              <a href="https://drive.google.com/file/d/1bERsxfQ8YEpvopOmim-gVLfi6a0218xv/view?usp=sharing">
+                View Resume
+              </a>
+            </button>
+          </div>
         </div>
         <div
           className="banner-img-container rounded-full md:ms-10"

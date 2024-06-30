@@ -57,7 +57,7 @@ const Navbar = ({ color, setColor }) => {
       <p>
         <NavLink
           onClick={downloadPDF}
-          className="inline-flex items-center gap-2 border-2 px-4 py-2 rounded local-btn text-white font-bold "
+          className="inline-flex items-center gap-2 border-2 border-orange-500 px-4 py-2 rounded  text-white font-bold "
         >
           {" "}
           <FaFileDownload /> Resume

@@ -13,34 +13,20 @@
     background-position: top;
     transition: ease-in-out 11s;
 }
+.image_details{
+    height: 480px;
+    width: 100%;
+    background: black;
+    background-position: top;
+    transition: ease-in-out 11s;
+}
 
-.image1{
-    background: url('/images/elite-export.png');
-    background-size: cover;
-}
-.image2{
-    background: url('/images/toys.png');
-    background-size: cover;
-}
-.image3{
-    background: url('/images/letsgo.png');
-    background-size: cover;
-}
-.image4{
-    background: url('/images/chef.png');
-    background-size: cover;
-}
-.image5{
-    background: url('/images/flower-m.png');
-    background-size: cover;
-}
-.image6{
-    background: url('/images/blood.png');
-    background-size: cover;
-}
 
 .image:hover{
     background-position: bottom;
+}
+.image_details:hover{
+    background-position: bottom; 
 }
 
 .banner-img-container{

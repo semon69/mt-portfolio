@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
-  console.log(blogs);
   useEffect(() => {
-    fetch("/blog.json")
+    fetch("https://portfolio-server-cyan.vercel.app/api/v1/blog")
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
+
+  console.log(blogs);
 
   return (
     <div className="space-y-10 pt-16 md:pt-0 p-2">
@@ -15,14 +16,14 @@ const Blog = () => {
         Blogs
       </h2>
       <div className="">
-        {blogs.map((blog) => 
-          <div className="border  border-black shadow-xl p-5 rounded space-y-6 md:grid md:grid-cols-2 items-center gap-5 my-5">
+        {blogs?.data?.map((blog) => (
+          <div
+            data-aos="zoom-in-down"
+            key={blog?._id}
+            className="border  border-black shadow-xl p-5 rounded space-y-6 md:grid md:grid-cols-2 items-center gap-5 my-5"
+          >
             <div className="">
-              <img
-                className="w-full mx-auto"
-                src={blog?.image}
-                alt=""
-              />
+              <img className="w-full mx-auto" src={blog?.image} alt="" />
             </div>
             <div className="space-y-5">
               <p className="font-semibold text-xl text-orange-500">
@@ -34,7 +35,7 @@ const Blog = () => {
               </p>
             </div>
           </div>
-        )}
+        ))}
       </div>
     </div>
   );

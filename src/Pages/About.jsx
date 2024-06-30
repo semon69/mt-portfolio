@@ -21,12 +21,18 @@ const About = () => {
             Computer Science and Engineering (CSE). I specialize in React.js,
             Next.js, Node.js, MongoDB, and PostgreSQL.
             <br /> <br />
-            I'm skilled in creating dynamic and responsive web applications using React.js and Next.js, making them visually appealing and efficient. My experience extends to server-side development with Node.js and Express.js, where I build robust and scalable backend systems.
+            I'm skilled in creating dynamic and responsive web applications
+            using React.js and Next.js, making them visually appealing and
+            efficient. My experience extends to server-side development with
+            Node.js and Express.js, where I build robust and scalable backend
+            systems.
             <br />
             <br />
-            JavaScript is my go-to language for both frontend and backend development. I use React.js and Next.js to build interactive user interfaces and manage complex application states. On the server side, I work with Node.js and Express.js to create efficient server applications and RESTful APIs. I'm proficient in working with both MongoDB and PostgreSQL, managing data effectively for various web applications.
-            <br /> <br />
-            Currently, I work as a backend developer at Diligent Soft It, where I continue to hone my skills and contribute to various projects across the full stack.
+            {/* JavaScript is my go-to language for both frontend and backend development. I use React.js and Next.js to build interactive user interfaces and manage complex application states. On the server side, I work with Node.js and Express.js to create efficient server applications and RESTful APIs. I'm proficient in working with both MongoDB and PostgreSQL, managing data effectively for various web applications.
+            <br /> <br /> */}
+            Currently, I work as a backend developer at Diligent Soft It, where
+            I continue to hone my skills and contribute to various projects
+            across the full stack.
             <br />
             <br />I have worked on several web development projects, both
             independently and in collaboration with others. These experiences
@@ -34,7 +40,11 @@ const About = () => {
             field.
           </p>
           <br />
-          <p className="text-2xl font-bold">Certification:</p>
+          <p className="text-xl font-bold text-orange-500">Education:</p>
+          <p>BSc in Computer Science and Engineering</p>
+          <p>Atish Dipankar University of Science and Technology</p>
+          <p>CGPA : {"  "} 3.47 </p>
+          <p className="text-xl font-bold text-orange-500">Certification:</p>
           <p>Complete Web Development With Jhanker Mahbub (Level 1)</p>
           <p>Complete Web Development With Programming Hero ( Level 2)</p>
         </div>

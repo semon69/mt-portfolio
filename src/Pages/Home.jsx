@@ -5,6 +5,7 @@ import Contact from './Contact';
 import Skills from './Skills';
 import Services from './Services';
 import About from './About';
+import Experience from './Experience';
 
 const Home = () => {
     const [theme, setTheme] = useState(false)
@@ -15,6 +16,7 @@ const Home = () => {
         <div className={`px-3`}>
             <Banner></Banner>
              <About></About>
+             <Experience />
             <Skills></Skills>
             <BestProjects></BestProjects>
             <Services></Services>

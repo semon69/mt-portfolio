@@ -1,56 +1,47 @@
-import React from "react";
-import textEditor from "../assets/images/text editor.png";
+import React, { useEffect, useState } from "react";
 import "./Main.css";
+import { NavLink } from "react-router-dom";
 
 const Projects = () => {
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    fetch("https://portfolio-server-cyan.vercel.app/api/v1/project")
+      .then((res) => res.json())
+      .then((data) => setProjects(data));
+  }, [projects]);
   return (
     <div className="pt-16 md:pt-0 p-2">
       <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3 text-orange-500 border-b-orange-600 mt-10">
         All Projects
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-        <div
-          data-aos="zoom-in-down"
-          className="border-2 rounded shadow-xl  my-5"
-        >
-          <div className="image image6"></div>
-          <div className="p-5">
-            <p className="text-3xl pb-3 font-semibold">
-              RedLove - Blood Donation
-            </p>
-            <p className="font-semibold py-3">
-              I developed a blood donation website with a prominent logo and
-              navigation bar, a hero section featuring a "Search Donors" button,
-              and an About section outlining its mission. The site includes
-              coverage areas, success stories, donation tips, and testimonials.
-              It offers user-friendly login and registration forms, a donor list
-              with search and filter options, and detailed donor profiles with a
-              "Request Blood" button. Users can submit blood requests through a
-              dedicated form, and manage their profiles, information, and
-              requests. An admin dashboard facilitates user account management.
-              You can visit as admin to see admin features, email:
-              emon@gmail.com. Password: 1234
-            </p>
-            <div className="flex justify-between">
-              <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold ">
-                <a href="https://github.com/semon69/blood-donation-frontend">
-                  Github Client Link
-                </a>
-              </button>
-              <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold ">
-                <a href="https://github.com/semon69/blood-donation-api">
-                  Github Server Link
-                </a>
-              </button>
-              <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold ">
-                <a href="https://blood-donation-client-nine.vercel.app/">
-                  Live Link
-                </a>
-              </button>
+        {projects?.data?.map((project) => (
+          <div
+            key={project?._id}
+            data-aos="zoom-in-down"
+            className="border-2 rounded shadow-xl  my-5"
+          >
+            <div
+              className="image"
+              style={{
+                backgroundImage: `url(${project?.image})`,
+                backgroundSize: "cover",
+              }}
+            ></div>
+            <div className="p-5">
+              <p className="text-3xl pb-4 font-semibold">{project?.title}</p>
+
+              <div className=" flex justify-end">
+                <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold">
+                  <NavLink to={`/projects/${project?._id}`}>
+                    View Details
+                  </NavLink>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <div
+        ))}
+        {/* <div
           data-aos="zoom-in-down"
           className="border-2 rounded shadow-xl  my-5"
         >
@@ -250,7 +241,7 @@ const Projects = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
