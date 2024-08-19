@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 const ProjectDetails = () => {
   const project = useLoaderData();
-  
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -25,6 +25,13 @@ const ProjectDetails = () => {
         <div className="p-5">
           <p className="text-3xl pb-3 font-semibold">{project?.data?.title}</p>
           <p className="font-semibold py-3">{project?.data?.description}</p>
+          <p className="pb-4">
+            {" "}
+            <span className="text-xl font-semibold text-orange-500">
+              Technology Used:
+            </span>{" "}
+            {project?.data?.tech}
+          </p>
           <div className="flex justify-between">
             <button className="border-2 px-4 py-2 rounded text-orange-500 font-bold ">
               <a href={project?.data?.g_frontend}>Github Client Link</a>
@@ -36,7 +43,7 @@ const ProjectDetails = () => {
                 </button>
               )}
             </div>
-            <button className="border-2 px-4 py-2 rounded text-orange-500 font-bold ">
+            <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold">
               <a href={project?.data?.live_link}>Live Link</a>
             </button>
           </div>
