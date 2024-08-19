@@ -35,6 +35,13 @@ const BestProjects = () => {
             ></div>
             <div className="p-5">
               <p className="text-3xl pb-4 font-semibold">{project?.title}</p>
+              <p className="pb-4">
+                {" "}
+                <span className="text-xl font-semibold text-orange-500">
+                  Technology Used:
+                </span>{" "}
+                {project?.tech}
+              </p>
 
               <div className=" flex justify-end">
                 <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold">
