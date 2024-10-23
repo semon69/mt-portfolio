@@ -16,7 +16,7 @@ const Skills = () => {
         My Skills
       </h2>
 
-      <div className="grid gap-5 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid gap-5 grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {skills?.data?.map((skill) => (
           <div className="text-center my-3" key={skill._id}>
             <div className="inline-flex justify-center items-center border bg-white w-44 h-44 rounded-full p-2 hover:scale-110">
