@@ -9,10 +9,9 @@ const Navbar = ({ color, setColor }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const downloadPDF = () => {
     const fileURL =
-      "https://drive.google.com/uc?export=download&id=1bERsxfQ8YEpvopOmim-gVLfi6a0218xv";
+      "https://drive.google.com/uc?export=download&id=1yKxudD66sRJRfYgIKPBq5KV2rJgJbBio";
     window.location.href = fileURL;
   };
-  // https://drive.google.com/file/d/1bERsxfQ8YEpvopOmim-gVLfi6a0218xv/view?usp=sharing
   const handleTheme = () => {
     setColor(!color);
   };
