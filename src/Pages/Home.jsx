@@ -6,6 +6,7 @@ import Skills from './Skills';
 import Services from './Services';
 import About from './About';
 import Experience from './Experience';
+import ScrollToTop from './ScrollToTop';
 
 const Home = () => {
     const [theme, setTheme] = useState(false)
@@ -21,6 +22,7 @@ const Home = () => {
             <BestProjects></BestProjects>
             <Services></Services>
             <Contact></Contact>
+            <ScrollToTop />
         </div>
     );
 };

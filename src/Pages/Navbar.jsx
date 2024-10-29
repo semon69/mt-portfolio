@@ -9,7 +9,7 @@ const Navbar = ({ color, setColor }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const downloadPDF = () => {
     const fileURL =
-      "https://drive.google.com/uc?export=download&id=1yKxudD66sRJRfYgIKPBq5KV2rJgJbBio";
+      "https://drive.google.com/uc?export=download&id=1kTVBL1cLvxhpea8pYQHCwF-ne4TzAvub";
     window.location.href = fileURL;
   };
   const handleTheme = () => {

@@ -23,35 +23,64 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+
+  //   const templateParams = {
+  //     name,
+  //     email,
+  //     message,
+  //   };
+
+  //   emailjs
+  //     .send(
+  //       "service_3tc3p99",
+  //       "template_kr4gohr",
+  //       templateParams,
+  //       "B9G_EgR6kzlvxVU2U"
+  //     )
+  //     .then((response) => {
+  //       console.log("Email sent successfully!", response.status, response.text);
+  //       event.target.reset();
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error sending email:", error);
+  //     });
+
+  //   setName("");
+  //   setEmail("");
+  //   setMessage("");
+  // };
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
     const templateParams = {
-      name,
-      email,
-      message,
+      to_name: "Md Emon Sheikh",    // Replace with the recipient’s name or keep as a default
+      from_name: name,           // Sender's name input
+      from_email: email,         // Sender's email input
+      message: message           // The message content
     };
-    console.log(name);
 
     emailjs
       .send(
-        "service_3tc3p99",
-        "template_kr4gohr",
+        "service_3tc3p99",    
+        "template_kr4gohr",    
         templateParams,
-        "B9G_EgR6kzlvxVU2U"
+        "B9G_EgR6kzlvxVU2U"      
       )
       .then((response) => {
         console.log("Email sent successfully!", response.status, response.text);
-        event.target.reset();
+        event.target.reset();   // Reset form fields after submission
+        setName("");
+        setEmail("");
+        setMessage("");
       })
       .catch((error) => {
         console.error("Error sending email:", error);
       });
-
-    setName("");
-    setEmail("");
-    setMessage("");
   };
+
   return (
     <div className="pt-28 md:pt-8">
       <section className="rounded-md">
@@ -96,7 +125,7 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-            <div data-aos="zoom-in-right">
+            <div data-aos="zoom-in-right" className="">
               <h3 className="text-xl font-semibold mb-2">Send me a Message</h3>
               <form onSubmit={handleSubmit} className="max-w-md">
                 <div className="mb-4">
@@ -107,7 +136,7 @@ const Contact = () => {
                     Your Name
                   </label>
                   <input
-                    className="border border-gray-300 rounded-md py-2 px-3 w-full"
+                    className="border border-gray-300 rounded-md py-2 px-3 w-full text-black"
                     type="text"
                     id="name"
                     name="name"
@@ -123,7 +152,7 @@ const Contact = () => {
                     Your Email
                   </label>
                   <input
-                    className="border border-gray-300 rounded-md py-2 px-3 w-full"
+                    className="border border-gray-300 rounded-md py-2 px-3 w-full text-black"
                     type="email"
                     id="email"
                     name="email"
@@ -139,7 +168,7 @@ const Contact = () => {
                     Message
                   </label>
                   <textarea
-                    className="border border-gray-300 rounded-md py-2 px-3 w-full h-32"
+                    className="border border-gray-300 rounded-md py-2 px-3 w-full h-32 text-black"
                     id="message"
                     name="message"
                     required

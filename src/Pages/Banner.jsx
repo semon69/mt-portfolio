@@ -18,10 +18,10 @@ const Banner = () => {
     <div className="mt-14 md:mt-24" data-aos="fade-up">
       <div className="grid grid-cols-1 lg:grid-cols-2 justify-between items-center">
         <div data-aos="fade-left" className="p-3 space-y-6">
-          <p className="text-3xl lg:text-5xl italic mt-20 lg:mt-5">
+          <p className="text-3xl lg:text-4xl italic mt-20 lg:mt-5">
             Hello! I'm
           </p>
-          <p className="text-4xl lg:text-7xl italic">MD EMON SHEIKH</p>
+          <p className="text-4xl lg:text-6xl italic">MD EMON SHEIKH</p>
           <h1 className="text-2xl ">
             {" "}
             <span>
@@ -55,20 +55,20 @@ const Banner = () => {
               <Link to={'/projects'}>Explore Project</Link>
             </button>
             <button className="border-2 px-4 py-2 rounded text-orange-500 font-bold">
-              <a href="https://drive.google.com/file/d/1bERsxfQ8YEpvopOmim-gVLfi6a0218xv/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1kTVBL1cLvxhpea8pYQHCwF-ne4TzAvub/view?usp=sharing">
                 View Resume
               </a>
             </button>
           </div>
         </div>
         <div
-          className="banner-img-container rounded-full md:ms-10"
+          className="banner-img-container rounded-full md:ms-28"
           data-aos="fade-left"
         >
           <img
-            className="banner-img"
-            // src="https://i.ibb.co/qdZLNck/emon2.jpg"
-            src="https://i.ibb.co/CMX6Rb9/emon2.png"
+            className="banner-img ms-10 rounded-full"
+            // src="https://i.ibb.co/CMX6Rb9/emon2.png"
+            src="https://i.ibb.co.com/BB6Dcsg/Profile1-removebg-preview.png"
             alt=""
           />
         </div>

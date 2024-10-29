@@ -6,7 +6,7 @@ const Experience = () => {
     fetch("https://portfolio-server-cyan.vercel.app/api/v1/experience")
       .then((res) => res.json())
       .then((data) => setExperience(data));
-  }, [experience]);
+  }, []);
 
   console.log(experience?.data);
 

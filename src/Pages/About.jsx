@@ -4,8 +4,8 @@ import anim from "../../public/ani.json";
 
 const About = () => {
   return (
-    <div data-aos="fade-up">
-      <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3 text-orange-500 border-b-orange-600 my-10">
+    <div data-aos="">
+      <h2 className="text-4xl text-center mb-4 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3 text-orange-500 border-b-orange-600 my-2">
         About Me
       </h2>
       <div className="lg:flex gap-8 p-2">
