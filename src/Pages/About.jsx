@@ -30,9 +30,9 @@ const About = () => {
             <br />
             {/* JavaScript is my go-to language for both frontend and backend development. I use React.js and Next.js to build interactive user interfaces and manage complex application states. On the server side, I work with Node.js and Express.js to create efficient server applications and RESTful APIs. I'm proficient in working with both MongoDB and PostgreSQL, managing data effectively for various web applications.
             <br /> <br /> */}
-            Currently, I work as a backend developer at Diligent Soft It, where
-            I continue to hone my skills and contribute to various projects
-            across the full stack.
+            Currently, I work as a Full Stack developer at Standard Insights, A
+            Hong Kong based market research company, where I continue to hone my
+            skills and contribute to various projects across the full stack.
             <br />
             <br />I have worked on several web development projects, both
             independently and in collaboration with others. These experiences

@@ -44,15 +44,21 @@ const Banner = () => {
             dynamic and efficient web solutions, I thrive in the digital realm
           </p>
           <p className="italic">
-            Currently working as a Backend developer at{" "}
+            Currently working as a Full Stack developer at{" "}
             <span className="text-orange-500 font-bold text-xl">
-              Diligent Soft It
+              <a
+                href="https://standard-insights.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Standard Insights
+              </a>
             </span>
             .
           </p>
           <div className="flex gap-3">
             <button className="border-2 px-4 py-2 rounded local-btn text-white font-bold">
-              <Link to={'/projects'}>Explore Project</Link>
+              <Link to={"/projects"}>Explore Project</Link>
             </button>
             <button className="border-2 px-4 py-2 rounded text-orange-500 font-bold">
               <a href="https://drive.google.com/file/d/1kTVBL1cLvxhpea8pYQHCwF-ne4TzAvub/view?usp=sharing">
