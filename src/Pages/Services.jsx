@@ -1,31 +1,37 @@
-import React from 'react';
+import { FiCpu, FiLayers, FiRepeat } from "react-icons/fi";
+import Section from "../components/ui/Section";
+import Card from "../components/ui/Card";
+import Reveal from "../components/Reveal";
+import { services } from "../data/profile";
 
-const Services = () => {
-    return (
-        <div>
-            <h2 className="text-4xl text-center mb-8 font-bold italic border-b-4 mt-16 lg:w-1/4 lg:mx-auto pb-3 text-orange-500 border-b-orange-600 my-4">Services </h2>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
-                <div data-aos="zoom-in-down" className=' p-2 border-2 border-black'>
-                    <p className=' text-center font-bold my-6 text-2xl'>Custom Website Development</p>
-                    <img className='h-[300px] rounded my-4' src="https://img.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg?size=626&ext=jpg&ga=GA1.2.1536495682.1680942137&semt=ais" alt="" />
+const icons = [FiLayers, FiRepeat, FiCpu];
 
-                    <p>I specialized in creating custom websites using the MERN stack, tailored to unique requirements. From frontend design to backend development, I deliver high quality, responsive websites that provide an exceptional user experience.</p>
-                </div>
-                <div data-aos="zoom-in" className=' p-2 border-2 border-black'>
-                    <p className=' text-center font-bold my-6 text-2xl'>Responsive Web Design</p>
-                    <img className='h-[300px] rounded my-4' src="https://img.freepik.com/free-photo/responsive-design-layout-software-concept_53876-124325.jpg?size=626&ext=jpg&ga=GA1.1.1536495682.1680942137&semt=ais" alt="" />
-
-                    <p>I specialized in creating custom websites using the MERN stack, tailored to unique requirements. From frontend design to backend development, I deliver high quality, responsive websites that provide an exceptional user experience.</p>
-                </div>
-                <div data-aos="zoom-in-up" className=' p-2 border-2 border-black'>
-                    <p className=' text-center rounded my-6 font-bold text-2xl'>Database Integration</p>
-                    <img className='h-[300px] w-full rounded my-4' src="https://img.freepik.com/free-vector/analytics-data-science-database-analysis-statistical-report-information-processing-automation-datacenter-expert-making-report-vector-isolated-concept-metaphor-illustration_335657-2781.jpg?size=626&ext=jpg&ga=GA1.1.1536495682.1680942137&semt=sph" alt="" />
-
-                    <p>I specialized in creating custom websites using the MERN stack, tailored to unique requirements. From frontend design to backend development, I deliver high quality, responsive websites that provide an exceptional user experience.</p>
-                </div>
-            </div>
-        </div>
-    );
-};
+const Services = () => (
+  <Section
+    id="services"
+    eyebrow="Services"
+    title="What I can help with"
+    className="border-t border-line"
+  >
+    <ul className="grid gap-5 md:grid-cols-3">
+      {services.map((service, index) => {
+        const Icon = icons[index % icons.length];
+        return (
+          <Reveal key={service.title} as="li" delay={index * 0.09}>
+            <Card interactive className="h-full p-7">
+              <span className="grid h-11 w-11 place-items-center rounded-lg border border-line bg-raised text-accent">
+                <Icon className="text-lg" aria-hidden="true" />
+              </span>
+              <h3 className="mt-5 text-lg font-semibold">{service.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted">
+                {service.description}
+              </p>
+            </Card>
+          </Reveal>
+        );
+      })}
+    </ul>
+  </Section>
+);
 
 export default Services;

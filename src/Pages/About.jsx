@@ -1,55 +1,137 @@
-import React from "react";
-import Lottie from "lottie-react";
-import anim from "../../public/ani.json";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { FiAward, FiBookOpen, FiGlobe } from "react-icons/fi";
+import Section from "../components/ui/Section";
+import Card from "../components/ui/Card";
+import Reveal from "../components/Reveal";
+import { about, profile } from "../data/profile";
 
 const About = () => {
+  const ref = useRef(null);
+  // Gentle parallax as the portrait passes through the viewport.
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+  const y = useTransform(scrollYProgress, [0, 1], [26, -26]);
+
   return (
-    <div data-aos="">
-      <h2 className="text-4xl text-center mb-4 font-bold italic border-b-4 lg:w-1/4 lg:mx-auto pb-3 text-orange-500 border-b-orange-600 my-2">
-        About Me
-      </h2>
-      <div className="lg:flex gap-8 p-2">
-        <div
-          data-aos="fade-right"
-          className="lg:w-1/2 w-full border-2 border-black"
+    <Section
+      id="about"
+      eyebrow="About"
+      title="A bit about how I work"
+      className="border-t border-line"
+    >
+      <div className="grid gap-12 lg:grid-cols-[1fr_0.8fr] lg:gap-16">
+        <div>
+          <div className="space-y-5">
+            {about.paragraphs.map((paragraph, index) => (
+              <Reveal key={paragraph} delay={index * 0.08}>
+                <p className="leading-relaxed text-muted">{paragraph}</p>
+              </Reveal>
+            ))}
+          </div>
+
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            <Reveal delay={0.05}>
+              <Card className="h-full p-5">
+                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-accent">
+                  <FiBookOpen aria-hidden="true" />
+                  Education
+                </p>
+                <p className="mt-3 font-medium text-ink">
+                  {about.education.degree}
+                </p>
+                <p className="mt-1 text-sm text-muted">
+                  {about.education.institution}
+                </p>
+                <p className="mt-1 text-sm text-faint">
+                  {about.education.detail}
+                </p>
+              </Card>
+            </Reveal>
+
+            <Reveal delay={0.12}>
+              <Card className="h-full p-5">
+                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-accent">
+                  <FiAward aria-hidden="true" />
+                  Achievements
+                </p>
+                <ul className="mt-3 space-y-2">
+                  {about.achievements.map((achievement) => (
+                    <li
+                      key={achievement}
+                      className="text-sm leading-relaxed text-muted"
+                    >
+                      {achievement}
+                    </li>
+                  ))}
+                </ul>
+              </Card>
+            </Reveal>
+
+            <Reveal delay={0.18} className="sm:col-span-2">
+              <Card className="p-5">
+                <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-accent">
+                  <FiGlobe aria-hidden="true" />
+                  Languages
+                </p>
+                <ul className="mt-3 flex flex-wrap gap-2">
+                  {about.languages.map((language) => (
+                    <li
+                      key={language.name}
+                      className="rounded-md border border-line bg-raised px-2.5 py-1 text-xs text-muted"
+                    >
+                      <span className="font-medium text-ink">
+                        {language.name}
+                      </span>{" "}
+                      · {language.level}
+                    </li>
+                  ))}
+                </ul>
+              </Card>
+            </Reveal>
+          </div>
+        </div>
+
+        {/* Portrait */}
+        <motion.figure
+          ref={ref}
+          style={{ y }}
+          initial={{ opacity: 0, scale: 0.96 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="relative self-start"
         >
-          <Lottie animationData={anim} loop={true} />
-        </div>
-        <div data-aos="fade-left" className="lg:w-1/2 space-y-2">
-          <p>
-            Hi there! I'm a full-stack developer with a Bachelor's degree in
-            Computer Science and Engineering (CSE). I specialize in React.js,
-            Next.js, Node.js, MongoDB, and PostgreSQL.
-            <br /> <br />
-            I'm skilled in creating dynamic and responsive web applications
-            using React.js and Next.js, making them visually appealing and
-            efficient. My experience extends to server-side development with
-            Node.js and Express.js, where I build robust and scalable backend
-            systems.
-            <br />
-            <br />
-            {/* JavaScript is my go-to language for both frontend and backend development. I use React.js and Next.js to build interactive user interfaces and manage complex application states. On the server side, I work with Node.js and Express.js to create efficient server applications and RESTful APIs. I'm proficient in working with both MongoDB and PostgreSQL, managing data effectively for various web applications.
-            <br /> <br /> */}
-            Currently, I work as a Full Stack developer at Standard Insights, A
-            Hong Kong based market research company, where I continue to hone my
-            skills and contribute to various projects across the full stack.
-            <br />
-            <br />I have worked on several web development projects, both
-            independently and in collaboration with others. These experiences
-            have honed my skills and provided me with practical knowledge in the
-            field.
-          </p>
-          <br />
-          <p className="text-xl font-bold text-orange-500">Education:</p>
-          <p>BSc in Computer Science and Engineering</p>
-          <p>Atish Dipankar University of Science and Technology</p>
-          <p>CGPA : {"  "} 3.47 </p>
-          <p className="text-xl font-bold text-orange-500">Certification:</p>
-          <p>Complete Web Development With Jhanker Mahbub (Level 1)</p>
-          <p>Complete Web Development With Programming Hero ( Level 2)</p>
-        </div>
+          <div
+            aria-hidden="true"
+            className="absolute -inset-4 rounded-3xl bg-accent/10 blur-3xl"
+          />
+          <div className="group relative overflow-hidden rounded-2xl border border-line bg-raised">
+            <img
+              src={profile.portrait}
+              alt={`Portrait of ${profile.name}`}
+              loading="lazy"
+              className="aspect-[4/5] w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-105"
+            />
+            {/* Keeps the caption legible over any photo */}
+            <div
+              aria-hidden="true"
+              className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/75 to-transparent"
+            />
+            <figcaption className="absolute inset-x-0 bottom-0 p-5">
+              <p className="font-display text-lg font-semibold text-white">
+                {profile.name}
+              </p>
+              <p className="text-sm text-white/75">
+                {profile.title} · {profile.location}
+              </p>
+            </figcaption>
+          </div>
+        </motion.figure>
       </div>
-    </div>
+    </Section>
   );
 };
 

@@ -1,3 +1,201 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ------------------------------------------------------------------
+   Design tokens. Dark is the default; [data-theme="light"] overrides.
+   Values are space-separated RGB channels so Tailwind can apply alpha.
+
+   To change the brand colour, edit --c-accent* in both blocks only.
+------------------------------------------------------------------ */
+:root,
+[data-theme="dark"] {
+  --c-bg: 9 9 11;
+  --c-surface: 20 20 23;
+  --c-raised: 32 32 37;
+  --c-line: 39 39 44;
+  --c-ink: 250 250 250;
+  --c-muted: 161 161 170;
+  --c-faint: 113 113 122;
+  --c-accent: 167 139 250; /* violet-400 — text & icons on dark */
+  --c-accent-solid: 124 58 237; /* violet-600 — filled buttons */
+  --c-accent-ink: 255 255 255;
+  --glow: 139 92 246;
+}
+
+[data-theme="light"] {
+  --c-bg: 255 255 255;
+  --c-surface: 250 250 250;
+  --c-raised: 244 244 245;
+  --c-line: 228 228 231;
+  --c-ink: 24 24 27;
+  --c-muted: 82 82 91;
+  --c-faint: 113 113 122;
+  --c-accent: 109 40 217; /* violet-700 — AA on white */
+  --c-accent-solid: 109 40 217;
+  --c-accent-ink: 255 255 255;
+  --glow: 139 92 246;
+}
+
+@layer base {
+  * {
+    @apply border-line;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-bg text-ink font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tighter text-ink;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2;
+    --tw-ring-offset-color: rgb(var(--c-bg));
+  }
+
+  ::selection {
+    background: rgb(var(--c-accent) / 0.3);
+    color: rgb(var(--c-ink));
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(var(--c-bg));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--c-line));
+    border-radius: 9999px;
+    border: 2px solid rgb(var(--c-bg));
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--c-faint));
+  }
+
+  /* The custom cursor replaces the native one, but only where a real
+     pointing device exists and the viewer has not asked for less motion. */
+  @media (pointer: fine) {
+    html.has-custom-cursor,
+    html.has-custom-cursor * {
+      cursor: none !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Soft radial accent wash used behind the hero. */
+  .glow {
+    background-image: radial-gradient(
+      60% 60% at 50% 0%,
+      rgb(var(--glow) / 0.18) 0%,
+      rgb(var(--glow) / 0) 100%
+    );
+  }
+
+  /* Hairline grid backdrop, very low contrast. */
+  .grid-lines {
+    background-image: linear-gradient(
+        to right,
+        rgb(var(--c-line) / 0.5) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, rgb(var(--c-line) / 0.5) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(70% 55% at 50% 0%, black, transparent);
+  }
+
+  /* Edge fade for marquee strips. */
+  .fade-x {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 12%,
+      black 88%,
+      transparent
+    );
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      135deg,
+      rgb(var(--c-ink)) 20%,
+      rgb(var(--c-accent)) 100%
+    );
+  }
+
+  /* Rich text coming out of the dashboard's Quill editor. */
+  .rich-text {
+    @apply text-muted leading-relaxed;
+  }
+  .rich-text > * + * {
+    @apply mt-4;
+  }
+  .rich-text h1,
+  .rich-text h2,
+  .rich-text h3 {
+    @apply text-ink font-semibold;
+  }
+  .rich-text h1 {
+    @apply text-2xl;
+  }
+  .rich-text h2 {
+    @apply text-xl;
+  }
+  .rich-text h3 {
+    @apply text-lg;
+  }
+  .rich-text a {
+    @apply text-accent underline underline-offset-4 hover:no-underline;
+  }
+  .rich-text strong {
+    @apply text-ink font-semibold;
+  }
+  .rich-text ul {
+    @apply list-disc pl-5 space-y-1.5;
+  }
+  .rich-text ol {
+    @apply list-decimal pl-5 space-y-1.5;
+  }
+  .rich-text blockquote {
+    @apply border-l-2 border-accent pl-4 italic text-ink/80;
+  }
+  .rich-text pre,
+  .rich-text code {
+    @apply font-mono text-sm;
+  }
+  .rich-text pre {
+    @apply bg-raised rounded-lg p-4 overflow-x-auto;
+  }
+  .rich-text img {
+    @apply rounded-lg my-4;
+  }
+}

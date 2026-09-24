@@ -1,47 +1,31 @@
-import React, { useState, useEffect } from "react";
-import { FaArrowAltCircleUp  } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import { FiArrowUp } from "react-icons/fi";
 
 const ScrollToTop = () => {
-    const [showButton, setShowButton] = useState(false);
+  const [visible, setVisible] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.pageYOffset > 300) {
-                setShowButton(true);
-            } else {
-                setShowButton(false);
-            }
-        };
+  useEffect(() => {
+    // `pageYOffset` is deprecated in favour of `scrollY`.
+    const onScroll = () => setVisible(window.scrollY > 400);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    };
-
-    return (
-        <div
-            onClick={scrollToTop}
-            className="h-10 w-10 rounded-full flex items-center justify-center hover:scale-125 cursor-pointer"
-            style={{
-                position: "fixed",
-                bottom: "2rem",
-                right: "2rem",
-                display: showButton ? "flex" : "none",
-                backgroundColor: "white",
-            }}
-        >
-            <FaArrowAltCircleUp  className="text-orange-600 text-4xl" />
-        </div>
-    );
+  return (
+    <button
+      type="button"
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      aria-label="Scroll back to top"
+      className={`fixed bottom-6 right-6 z-40 grid h-11 w-11 place-items-center rounded-full border border-line bg-surface/90 text-accent shadow-lift backdrop-blur transition-all duration-300 hover:border-accent hover:-translate-y-1 ${
+        visible
+          ? "pointer-events-auto opacity-100"
+          : "pointer-events-none translate-y-3 opacity-0"
+      }`}
+    >
+      <FiArrowUp aria-hidden="true" />
+    </button>
+  );
 };
 
 export default ScrollToTop;
