@@ -2,10 +2,10 @@
 // through JSX. Sourced from the CV (Md Emon Sheikh — Software Engineer).
 
 export const RESUME_VIEW_URL =
-  "https://drive.google.com/file/d/1kTVBL1cLvxhpea8pYQHCwF-ne4TzAvub/view?usp=sharing";
+  "https://drive.google.com/file/d/1nW0K-W3K9Pe9v7BV7hcHoNwEYnrE8W2l/view?usp=sharing";
 
 export const RESUME_URL =
-  "https://drive.google.com/uc?export=download&id=1kTVBL1cLvxhpea8pYQHCwF-ne4TzAvub";
+  "https://drive.google.com/uc?export=download&id=1nW0K-W3K9Pe9v7BV7hcHoNwEYnrE8W2l";
 
 export const profile = {
   name: "Md Emon Sheikh",
@@ -27,8 +27,8 @@ export const profile = {
   whatsapp: "+8801817855902",
   location: "Dhaka, Bangladesh",
   company: {
-    name: "Nebs IT",
-    url: "https://nebsit.com/",
+    name: "Nebs-It Solutions LTD",
+    url: "https://nebs-it.com/",
     role: "Full Stack Developer",
     note: "internal business tools and client products",
   },
@@ -45,7 +45,7 @@ export const stats = [
 export const about = {
   paragraphs: [
     "I'm a Software Engineer with 2+ years building production systems end-to-end. Most of my work sits across the whole stack — React and Next.js on the front, Node.js and Express with PostgreSQL or MongoDB behind it.",
-    "At Nebs IT I've been the sole developer on two platforms from spec to deployment: Quest, a bulk email verification service built on an async BullMQ and Redis pipeline, and Digishop, a vendor invoicing platform. I also inherited a broken internal ERP, stabilised it, and expanded it with role-specific dashboards for seven departments.",
+    "At Nebs-It Solutions LTD I've been the sole developer on two platforms from spec to deployment: Quest, a bulk email verification service built on an async BullMQ and Redis pipeline, and Digishop, a vendor invoicing platform. I also inherited a broken internal ERP, stabilised it, and expanded it with role-specific dashboards for seven departments.",
     "Before that I spent a year at Standard Insights, a US market research startup, owning full-stack delivery on an AI-driven survey platform and integrating OpenAI, Gemini and Mistral to automate survey and audience generation — cutting manual setup time by 80–90%.",
   ],
   education: {
