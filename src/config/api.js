@@ -5,7 +5,7 @@
 //   VITE_API_URL=http://localhost:5000/api/v1
 export const API_BASE =
   import.meta.env.VITE_API_URL ??
-  "https://portfolio-server-cyan.vercel.app/api/v1";
+  "https://portfolio-backend-eta-plum.vercel.app/api/v1";
 
 export const endpoints = {
   projects: `${API_BASE}/project`,
