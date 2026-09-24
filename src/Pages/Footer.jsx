@@ -7,6 +7,7 @@ import {
 } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import Container from "../components/ui/Container";
+import Logo from "../components/ui/Logo";
 import { profile, socials } from "../data/profile";
 
 const iconMap = {
@@ -28,11 +29,8 @@ const Footer = () => (
     <Container className="py-14">
       <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
         <div className="max-w-sm">
-          <Link
-            to="/"
-            className="font-display text-lg font-bold tracking-tighter"
-          >
-            {profile.firstName}<span className="text-accent">.</span>
+          <Link to="/" className="inline-flex rounded-lg">
+            <Logo markClassName="h-9 w-9" />
           </Link>
           <p className="mt-3 text-sm leading-relaxed text-muted">
             {profile.headline}

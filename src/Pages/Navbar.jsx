@@ -3,8 +3,9 @@ import { NavLink, useLocation } from "react-router-dom";
 import { FiDownload, FiMenu, FiMoon, FiSun, FiX } from "react-icons/fi";
 import Container from "../components/ui/Container";
 import Button from "../components/ui/Button";
+import Logo from "../components/ui/Logo";
 import { useTheme } from "../hooks/useTheme.jsx";
-import { RESUME_URL, profile } from "../data/profile";
+import { RESUME_URL } from "../data/profile";
 
 const navItems = [
   { to: "/", label: "Home" },
@@ -65,11 +66,8 @@ const Navbar = () => {
     >
       <Container>
         <nav className="flex h-16 items-center justify-between gap-4">
-          <NavLink
-            to="/"
-            className="font-display text-lg font-bold tracking-tighter"
-          >
-            {profile.firstName}<span className="text-accent">.</span>
+          <NavLink to="/" className="rounded-lg">
+            <Logo markClassName="h-8 w-8" />
           </NavLink>
 
           {/* Desktop */}
