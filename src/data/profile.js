@@ -66,52 +66,6 @@ export const about = {
   ],
 };
 
-// Grouped capability list straight from the CV's "Area of Expertise".
-export const expertise = [
-  {
-    group: "Languages",
-    items: ["JavaScript (ES6+)", "TypeScript", "Python"],
-  },
-  {
-    group: "Frontend",
-    items: [
-      "React.js",
-      "Next.js",
-      "Redux",
-      "Zustand",
-      "Tailwind CSS",
-      "Bootstrap",
-    ],
-  },
-  {
-    group: "Backend & Databases",
-    items: [
-      "Node.js",
-      "Express.js",
-      "Redis",
-      "REST APIs",
-      "JWT Auth",
-      "PostgreSQL",
-      "MongoDB",
-      "Prisma",
-      "Mongoose",
-      "Sequelize",
-    ],
-  },
-  {
-    group: "AI & Automation",
-    items: ["OpenAI", "Gemini", "Mistral", "Claude", "Prompt Engineering"],
-  },
-  {
-    group: "Payments",
-    items: ["Stripe", "SSLCommerz"],
-  },
-  {
-    group: "DevOps & Tooling",
-    items: ["Git", "GitHub Actions", "Docker", "BullMQ", "Figma", "Brevo"],
-  },
-];
-
 // The strip that scrolls continuously beneath the hero.
 export const marqueeItems = [
   "TypeScript",
