@@ -8,10 +8,13 @@ import { EmptyState, ErrorState } from "../components/ui/States";
 import ProjectCard from "../components/ProjectCard";
 import useFetch from "../hooks/useFetch";
 import { endpoints } from "../config/api";
+import { sortByNewest } from "../utils/sortByNewest";
 
 const BestProjects = () => {
-  const { data: projects, loading, error } = useFetch(endpoints.projects);
-  const featured = projects?.slice(0, 4) ?? [];
+  const { data, loading, error } = useFetch(endpoints.projects);
+  // Newest first, so the most recent work leads the section.
+  const projects = sortByNewest(data ?? []);
+  const featured = projects.slice(0, 4);
 
   return (
     <Section

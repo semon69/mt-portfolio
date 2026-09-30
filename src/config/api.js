@@ -13,4 +13,5 @@ export const endpoints = {
   skills: `${API_BASE}/skill`,
   experience: `${API_BASE}/experience`,
   blogs: `${API_BASE}/blog`,
+  blog: (id) => `${API_BASE}/blog/${id}`,
 };

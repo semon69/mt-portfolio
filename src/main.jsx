@@ -10,6 +10,7 @@ import Home from "./Pages/Home.jsx";
 import Projects from "./Pages/Projects.jsx";
 import Contact from "./Pages/Contact.jsx";
 import Blog from "./Pages/Blog.jsx";
+import BlogDetails from "./Pages/BlogDetails.jsx";
 import ProjectDetails from "./Pages/ProjectDetails.jsx";
 import NotFound from "./Pages/NotFound.jsx";
 
@@ -30,6 +31,12 @@ const router = createBrowserRouter([
       },
       { path: "contact", element: <Contact /> },
       { path: "blog", element: <Blog /> },
+      {
+        path: "blog/:id",
+        element: <BlogDetails />,
+        errorElement: <NotFound />,
+        loader: ({ params }) => fetch(endpoints.blog(params.id)),
+      },
       { path: "*", element: <NotFound /> },
     ],
   },

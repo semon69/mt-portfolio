@@ -6,9 +6,11 @@ import { EmptyState, ErrorState } from "../components/ui/States";
 import ProjectCard from "../components/ProjectCard";
 import useFetch from "../hooks/useFetch";
 import { endpoints } from "../config/api";
+import { sortByNewest } from "../utils/sortByNewest";
 
 const Projects = () => {
-  const { data: projects, loading, error } = useFetch(endpoints.projects);
+  const { data, loading, error } = useFetch(endpoints.projects);
+  const projects = sortByNewest(data ?? []);
 
   useEffect(() => {
     window.scrollTo({ top: 0 });
