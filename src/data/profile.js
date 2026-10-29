@@ -21,7 +21,9 @@ export const profile = {
     "Software Engineer shipping production systems end-to-end in React/Next.js and Node.js.",
   summary:
     "Software Engineer with 2+ years shipping production systems end-to-end — including sole ownership of two platforms from spec to deployment. Focused on scalable async architecture, API design and AI-driven product features.",
-  portrait: "https://i.ibb.co.com/3yCN4kyc/6246538343420202668.jpg",
+  // Self-hosted and site-relative, so it follows the site to any domain
+  // and doesn't depend on a third-party host staying up.
+  portrait: "/images/about/emon.webp",
   email: "smdemon3@gmail.com",
   phone: "+8801817855902",
   whatsapp: "+8801817855902",
